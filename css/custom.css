@@ -54,6 +54,8 @@ a:hover {
 }
 /* 指定日・直近日付 */
 #accordion .date {
+	/* フォントサイズ追加 */
+	font-size: 1.3em;
 }
 /* 分別方法の頭文字(ふりがな) */
 #accordion .initials {

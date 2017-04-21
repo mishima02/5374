@@ -62,6 +62,8 @@ a:hover {
 }
 /* 分別方法の頭文字(ふりがな) */
 #accordion .initials {
+	/* ◇フォントサイズ追加 */
+	font-size: 1.3em;	
 	color: #ffffff;
 }
 /* ゴミを捨てるときの注意事項 */

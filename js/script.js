@@ -530,10 +530,10 @@ $(function() {
               target_tag += '<h4 class="initials">' + furigana + "</h4>";
               target_tag += "<ul>";
             }
-             // ◇ 四角
-            // target_tag += '<li style="list-style:none;"><div>' + target.name + "</div>"; 
-            target_tag += '<li style="list-style:square;"><div>' + target.name + "</div>";
-            target_tag += '<div class="note">' + target.notice + "</div></li>";
+            target_tag += '<li style="list-style:none;"><div>' + target.name + "</div>";
+            // ◇ 四角
+            // target_tag += '<div class="note">' + target.notice + "</div></li>";
+            target_tag += '<div class="note">    ' + target.notice + "</div></li>";
           }
 
           target_tag += "</ul>";

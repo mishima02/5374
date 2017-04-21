@@ -535,8 +535,7 @@ $(function() {
             if (target.notice.length > 0) {
                target_tag += '<div class="note">&ensp;' + target.notice + "</div></li>";
             } else {
-               //target_tag += '<div class="note">' + target.notice + "</div></li>";
-               target_tag += '<div class="note">' + target.notice.length + target.notice + "</div></li>";
+               target_tag += '<div class="note">' + target.notice + "</div></li>";
             }
           }
 

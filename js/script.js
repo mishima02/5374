@@ -518,8 +518,6 @@ $(function() {
           var furigana = "";
           var target_tag = "";
           var targets = description.targets;
-          // ◇スペース付加
-          var spaceHTML = "";
           for (var j in targets) {
             var target = targets[j];
             if (furigana != target.furigana) {
@@ -535,12 +533,11 @@ $(function() {
             target_tag += '<li style="list-style:none;"><div>' + target.name + "</div>";
             // ◇スペース付加
             if (target.notice.length > 0) {
-                spaceHTML = "&ensp;";
+               target_tag += '<div class="note">&ensp;' + target.notice + "</div></li>";
+            } else {
+               //target_tag += '<div class="note">' + target.notice + "</div></li>";
+               target_tag += '<div class="note">' + target.notice.length + target.notice + "</div></li>";
             }
-
-            // ◇ 
-            // target_tag += '<div class="note">' + target.notice + "</div></li>";
-            target_tag += '<div class="note">' + spaceHTML + target.notice + "</div></li>";
           }
 
           target_tag += "</ul>";

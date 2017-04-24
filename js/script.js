@@ -554,7 +554,13 @@ $(function() {
             }
 
             target_tag += '<li style="list-style:none;">' + target.name + "</li>";
-            target_tag += '<p class="note">' + target.notice + "</p>";
+
+            // ◇スペース付加
+            if (target.notice.length > 0) {
+               target_tag += '<p class="note">&ensp;' +  target.notice + "</p>";
+            } else {
+               target_tag += '<p class="note">' + target.notice + "</p>";
+            }
           }
 
           target_tag += "</ul>";
@@ -627,7 +633,7 @@ $(function() {
     });
   }
 
-  function onChangeSelect(group_name, area_name) {　
+  function onChangeSelect(group_name, area_name) {
     if (group_name == -1) {
       setSelectedGroupName(-1);
       $("#accordion").html("");

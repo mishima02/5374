@@ -9,6 +9,21 @@ a:hover {
 	color: white;
 	text-decoration: none;
 }
+
+/* ◇ */
+.aname{
+	display: table;
+	min-height: 69px;
+}
+
+.areaname{
+	font-size: 25px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align:center;
+	color: #228b22;
+}
+
 .accordion-inner {
 	padding: 9px 15px;
 }

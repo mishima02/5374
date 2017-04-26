@@ -462,7 +462,7 @@ $(function() {
     var group = areaGroup[$select_group.val()];
     for (var area_name in group) {
       var selected = (selected_name == area_name) ? 'selected="selected"': '';
-      select_html += '<option value="' + area_name + '" ' + selected + '>' + area_name + '</option>';
+      select_html += '<option value="' + area_name + '" ' + selected + '>&ensp;' + area_name + '</option>';
     }
     $select_area.html(select_html);
     $select_area.insertAfter($select_group);
@@ -525,7 +525,9 @@ $(function() {
       if (accordion_height<130) {accordion_height=130;};
     }
     var styleHTML = "";
-    var accordionHTML = "";
+    // ◇ var accordionHTML = "";
+    var accordionHTML = '   <div class="aname"> <div class="areaname">&ensp;' + area_name + "</div> </div>";
+
     //アコーディオンの分類から対応の計算を行います。
     for (var i in areaModel.trash) {
       var trash = areaModel.trash[i];

@@ -69,7 +69,7 @@ a:hover {
 }
 /* 相対日付 (左肩) */
 #accordion .left-day {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: white;
 	position: absolute;
 	padding-left: 10px;
@@ -77,12 +77,12 @@ a:hover {
 /* 指定日・直近日付 */
 #accordion .date {
     /* ◇フォントサイズ追加 */
-	font-size: 1.3em;
+	font-size: 1.1em;
 }
 /* 分別方法の頭文字(ふりがな) */
 #accordion .initials {
 	/* ◇フォントサイズ追加 */
-	font-size: 1.3em;	
+	font-size: 1.2em;	
 	color: #ffffff;
 }
 /* ゴミを捨てるときの注意事項 */

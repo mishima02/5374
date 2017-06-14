@@ -26,7 +26,8 @@ a:hover {
 }
 
 .accordion-inner {
-	padding: 5px 8px;
+	padding: 2px 8px;
+	font-weight: bold;
 }
 
 /*!

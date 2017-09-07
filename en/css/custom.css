@@ -54,8 +54,8 @@ a:hover {
 	text-align: center;
 	width: 100%;
 	/* ↑80% */
-	font-size: 18px;
-	/* font-size: 20px; これにしたいけどiPhon5で改行する*/
+	font-size: 20px;
+	/* font-size: 18px; */
 	/* font-size: 24px; */
 	font-weight: bold;
 	/* ◇ 0614 */
